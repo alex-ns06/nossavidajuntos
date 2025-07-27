@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa vida juntos 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(to bottom, #fff0f6, #ffe6f0);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background: url('fotos/banner.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    header h1, .timer {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2em;
+      margin: 0;
+    }
+    .timer {
+      font-size: 1.4em;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #d63384;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 0 10px;
+    }
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery-description {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    .montagem {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .heart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .heart-outline {
+      width: 150px;
+      height: 135px;
+      position: relative;
+    }
+    .heart-outline::before,
+    .heart-outline::after {
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 120px;
+      border: 4px solid #ff4d88;
+      border-radius: 75px 75px 0 0;
+    }
+    .heart-outline::before {
+      left: 0;
+      transform: rotate(-45deg);
+      transform-origin: bottom right;
+    }
+    .heart-outline::after {
+      right: 0;
+      transform: rotate(45deg);
+      transform-origin: bottom left;
+    }
+    .heart-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6em;
+      color: #ff4d88;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    footer {
+      background: #ffd6e8;
+      padding: 20px;
+      font-size: 1em;
+      color: #333;
+      text-align: center;
+      border-top: 2px solid #ffaad4;
+    }
+    .spotify {
+      margin: 30px auto;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>1 Ano de Amor 💑</h1>
+    <div class="timer" id="timeTogether"></div>
+  </header>
+
+  <div class="heart">
+    <div class="heart-outline">
+      <div class="heart-text">A + L</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Nossos 12 meses 💕</h2>
+    <div class="gallery">
+      <div class="gallery-item"><img src="fotos/mes1.jpg" alt="Mês 1"><div class="gallery-description">Nosso primeiro mês juntinhos ❤️</div></div>
+      <div class="gallery-item"><img src="fotos/mes2.jpg" alt="Mês 2"><div class="gallery-description">Descobrindo mais um sobre o outro 🥰</div></div>
+      <div class="gallery-item"><img src="fotos/mes3.jpg" alt="Mês 3"><div class="gallery-description">Risos, abraços e amor! 😄</div></div>
+      <div class="gallery-item"><img src="fotos/mes4.jpg" alt="Mês 4"><div class="gallery-description">Quanta coisa linda vivemos 💫</div></div>
+      <div class="gallery-item"><img src="fotos/mes5.jpg" alt="Mês 5"><div class="gallery-description">Metade de um ano com você 💕</div></div>
+      <div class="gallery-item"><img src="fotos/mes6.jpg" alt="Mês 6"><div class="gallery-description">Nosso meio-aniversário! 💖</div></div>
+      <div class="gallery-item"><img src="fotos/mes7.jpg" alt="Mês 7"><div class="gallery-description">Te amo mais a cada dia 🌹</div></div>
+      <div class="gallery-item"><img src="fotos/mes8.jpg" alt="Mês 8"><div class="gallery-description">Compartilhando sonhos ✨</div></div>
+      <div class="gallery-item"><img src="fotos/mes9.jpg" alt="Mês 9"><div class="gallery-description">Você é meu lar 💞</div></div>
+      <div class="gallery-item"><img src="fotos/mes10.jpg" alt="Mês 10"><div class="gallery-description">Já estamos há tanto tempo juntos! 💑</div></div>
+      <div class="gallery-item"><img src="fotos/mes11.jpg" alt="Mês 11"><div class="gallery-description">O amor só cresce 💗</div></div>
+      <div class="gallery-item"><img src="fotos/mes12.jpg" alt="Mês 12"><div class="gallery-description">Nosso primeiro ano completo! 🎉</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nossa Montagem Especial 📸</h2>
+    <img src="fotos/montagem.jpg" alt="Montagem dos Meses" class="montagem">
+  </section>
+
+  <section>
+    <h2>Jogos para nós 🎮</h2>
+    <p>Vamos brincar juntos e guardar mais lembranças especiais!</p>
+    <h3>🧩 Quebra-cabeça</h3>
+    <iframe src="https://www.jigsawexplorer.com/online-jigsaw-puzzle-generator.html"></iframe>
+
+    <h3>🧠 Jogo da Memória</h3>
+    <iframe src="https://matchthememory.com"></iframe>
+
+    <h3>🎨 Jogo de Desenho</h3>
+    <iframe src="https://sketchful.io"></iframe>
+
+    <h3>💌 Verdade ou Desafio Romântico</h3>
+    <iframe src="https://playtictactoe.org"></iframe>
+  </section>
+
+  <section>
+    <h2>Nossa Trilha Sonora 🎶</h2>
+    <p>Essa música marcou o início do nosso amor:</p>
+    <div class="spotify">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3VZIbWzZvd7CTrF9t9NocH?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    Feito com muito amor por você 💖 | 27/07/2024 - Para sempre ❤️
+  </footer>
+
+  <script>
+    const startDate = new Date("2024-07-27T00:00:00");
+    const timer = document.getElementById("timeTogether");
+
+    function updateTimeTogether() {
+      const now = new Date();
+      let diff = now - startDate;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      timer.innerText = `Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos ❤️`;
+    }
+
+    setInterval(updateTimeTogether, 1000);
+    updateTimeTogether();
+  </script>
+</body>
+</html>
